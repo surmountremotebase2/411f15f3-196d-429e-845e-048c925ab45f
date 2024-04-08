@@ -1,1 +1,1 @@
-{}
+{"interval": "1day", "assets": ["TQQQ", "QQQ"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "VWAP", "args": {"length": "1", "ticker": "QQQ"}, "advanced": {}}, "second": {"name": "EMA", "args": {"length": "25", "ticker": "QQQ"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "TQQQ", "amount": 100}]}, "else_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "TQQQ", "amount": "0"}]}}]}
